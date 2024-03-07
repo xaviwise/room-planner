@@ -237,7 +237,7 @@ export default {
         this.calcStatistics()
       }
     },
-    onDeletedRoom (id: Number) {
+    onDeletedRoom (id: number) {
       // en realidad deberiamos llamar getFloorData
       // metodo solo para que parezca que se ha hecho algo
       if (this.currFloor !== null && this.currFloor.rooms !== null) {

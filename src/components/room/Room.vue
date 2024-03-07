@@ -1,9 +1,10 @@
 <template>
   <div class="room">
-    <div v-if="!editMode" class="name">Sala {{ getRoomName }}</div>
+    <div v-if="!editMode" class="name">Sala {{ name }}</div>
     <v-form v-model="formValid">
       <v-text-field
         v-model="name_"
+        :value="name_"
         v-if="editMode"
         :rules="nameRules"
         required
@@ -12,6 +13,7 @@
       />
       <v-text-field
         v-model="capacity_"
+        :value="capacity_"
         class="custom-textfield"
         variant="solo"
         required
@@ -22,6 +24,7 @@
       />
       <v-text-field
         v-model="occupation_"
+        :value="occupation_"
         class="custom-textfield"
         variant="solo"
         required
