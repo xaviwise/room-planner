@@ -1,0 +1,46 @@
+.v-btn.custom-button {
+  align-items: center;
+  border-radius: 12px !important;
+  max-width: 120px !important;
+  min-width: 80px !important;
+  background-color:var(--vt-c-deepblue-satec);
+  color: white;
+  font-size: 11px !important;
+
+  @media (max-width: 600px) {
+    width: 80px !important;
+    font-size: 9px !important;
+  }
+}
+
+.v-slider.custom-slider {
+  .v-input__prepend .v-slider__label {
+    font-size: 10px !important;
+  }
+  .v-slider-thumb__label {
+    height: 20px !important;
+    bottom: 5px !important;
+  }
+}
+
+.v-switch.custom-switch {
+  .v-label {
+    font-size: 10px !important;
+  }
+  .v-selection-control__wrapper {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .v-selection-control .v-selection-control__wrapper .v-switch__track {
+    background-color: red;
+  }
+  .v-selection-control--dirty .v-selection-control__wrapper .v-switch__track {
+    background-color: green;
+  }
+}
+
+.v-text-field.custom-textfield {
+  .v-field__field {
+    background-color: white;
+  }
+}
